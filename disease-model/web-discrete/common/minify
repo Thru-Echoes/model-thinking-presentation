@@ -1,0 +1,16 @@
+#!/bin/tcsh
+java -jar yuicompressor-2.4.8.jar NovaOL/jnovascriptx.js > NovaOL/jnovascriptx.min.js
+java -jar yuicompressor-2.4.8.jar NovaOL/jpluginsx.js > NovaOL/jpluginsx.min.js
+java -jar yuicompressor-2.4.8.jar NovaOL/novaManager.js > NovaOL/novaManager.min.js
+java -jar yuicompressor-2.4.8.jar NovaOL/novaol.js > NovaOL/novaol.min.js
+java -jar yuicompressor-2.4.8.jar plugins/agentviewer.js > plugins/agentviewer.min.js
+java -jar yuicompressor-2.4.8.jar plugins/agentviewerx.js > plugins/agentviewerx.min.js
+java -jar yuicompressor-2.4.8.jar plugins/barchart.js > plugins/barchart.min.js
+java -jar yuicompressor-2.4.8.jar plugins/cascade.js > plugins/cascade.min.js
+java -jar yuicompressor-2.4.8.jar plugins/fnetviewer.js > plugins/fnetviewer.min.js
+java -jar yuicompressor-2.4.8.jar plugins/linechart.js > plugins/linechart.min.js
+java -jar yuicompressor-2.4.8.jar plugins/netviewer.js > plugins/netviewer.min.js
+java -jar yuicompressor-2.4.8.jar plugins/raster.js > plugins/raster.min.js
+java -jar yuicompressor-2.4.8.jar plugins/scatterchart.js > plugins/scatterchart.min.js
+java -jar yuicompressor-2.4.8.jar plugins/table.js > plugins/table.min.js
+java -jar yuicompressor-2.4.8.jar plugins/tableau.js > plugins/tableau.min.js

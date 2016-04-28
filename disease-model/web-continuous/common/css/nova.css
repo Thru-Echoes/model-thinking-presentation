@@ -1,0 +1,124 @@
+@CHARSET "UTF-8";
+* { margin:0; padding:0; }
+
+body {
+    background: #ffffff;
+    font: normal 13px/1.65 "PT Sans", "Helvetica", "Arial", sans-serif;
+    color: #696969;
+    width:100%;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* header */
+
+.header {
+    position: relative;
+    width: 920px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    font: bold 25px "PT Sans", "Helvetica", "Arial", sans-serif;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* simulation controls */
+
+.simControlTable {
+	width: 1000px;
+	padding-top: 30px;	
+	padding-bottom: 30px	
+}
+
+.simControlTable td {
+	width: 200px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* model controls */
+
+.modControlTable td {
+	padding-right:10px;
+	width: 250px;
+	white-space: nowrap;
+	text-align: right;
+	padding-bottom: 30px	
+}
+
+.numDisplay {
+	text-align: right;
+}
+
+.novaVisuals {
+	padding-top: 30px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* generic */
+
+p {
+    margin-bottom:12px;
+}
+
+pre {
+    margin-bottom:12px;
+}
+
+strong {
+    font-weight:bold;
+    color: #f00;
+}
+
+b {
+    font-weight:bold;
+    color: #000;
+}
+
+a {
+    text-decoration:underline;
+    color: #933;
+    border:none;
+}
+
+a:hover {
+    text-decoration:underline;
+    color: #933;
+}
+
+img {
+    border:none;
+}
+
+ul {
+    margin-left:22px;
+    margin-bottom: 12px;
+}
+
+ol {
+    margin-left:22px;
+    margin-bottom: 12px;
+}
+
+li {
+    margin-bottom:8px;
+}
+

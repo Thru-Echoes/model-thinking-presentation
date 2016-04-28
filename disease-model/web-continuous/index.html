@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SIRV Disease</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+        <link href="sirv-model/stochSIRV.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome-4.4.0/css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Exo|Exo+2' rel='stylesheet' type='text/css'>
+
+        <!-- Incorporate all other CSS -->
+
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script-->
+        <script type="text/javascript" src="js/jquery-2.2.3.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+    <!-- NAVIGATION BAR -->
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<!-- for screen readers -->
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Stochastic SIRV Model</a>
+			</div>
+
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">Home</a></li>
+					<!--li><a href="index.html">About</a></li-->
+                    <li class="dropdown">
+        				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Nova Projects<b class="caret"></b></a>
+        				<ul class="dropdown-menu">
+                            <li class="dropdown-header">Disease Models</li>
+                            <li><a href="showModel.html">Stochastic SIRV</a></li>
+                            <li><a href="http://nature.berkeley.edu/getzlab/insectmod/showModel.html">Lotka-Volterra Inseticide</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Other References</li>
+                            <li><a href="https://www.novamodeler.com/">Nova Website</a></li>
+                            <li><a href="http://wiki.novamodeler.com/index.php/Nova_Wiki:_The_Place_For_Nova_Documentation">Nova Documentation</a></li>
+                        </ul>
+        			</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Jumbotron -->
+    <div class="container">
+        <!--div class="jumbotron">
+        	<h1>Simple Transitions - Stochastic SIRV SIRV</h1>
+            <p class="blockText">An interactive NOVA-based SIRV model.</p>
+            <p><a href="metapop.html"class="btn btn-default" role="button">Begin</a></p>
+            <p><a href="showModel.html"class="btn btn-danger" role="button">To Model</a></p>
+        </div-->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <h1>Stochastic SIRV</h1>
+                    <p class="blockText">An interactive NOVA-based SIRV model.</p>
+                    <button id="toModel" class="btn btn-default">Proceed to Model</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row overview-text">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <h3 style="text-align: center;">Model Overview</h3>
+                <br>
+                <br>
+                <p class="blockText" style="text-align: center;">This is a <strong>S</strong>usceptible - <strong>I</strong>nfectious - <strong>R</strong>ecovering - <strong>V</strong>accinated model.</p>
+                <br>
+                <p class="blockText" style="text-align: center;">This is a disease model built in the <a href="https://www.novamodeler.com/">Nova modeling platform</a> and translated into a web application. The model was built as a demonstration of both the powers of modeling and using the Nova software to do so at a TeenTech SF workshop at UC Berkeley (April 23, 2016).</p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row overview-text">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <h3 style="text-align: center;">Interact with the Model</h3>
+                <br>
+                <br>
+                <p class="blockText" style="text-align: center;">Since Nova uses JavaScript as both a scripting and visual language for building computational models, we can seemlessly incorporate web and other JS-compatible libraries and platforms. E.g. Interactive data visualization with the <a href="https://d3js.org/">D3js library</a> and server-side integration with <a href="https://nodejs.org/en/">NodeJS and npm</a>.</p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row overview-text">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <h3 style="text-align: center;">Nova and the Getz Lab</h3>
+                <br>
+                <br>
+                <p class="blockText" style="text-align: center;">Nova modeling projects within the <a href="http://nature.berkeley.edu/getzlab/">Getz lab at UC Berkeley</a> make use of both <code>D3js</code> and <code>NodeJS</code> integration.</p>
+                <br>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+            <div class="container">
+                <div class="navbar-text pull-left">
+                    <p>2016 NOVA || TeenTech SF</p>
+                </div>
+                <div class="navbar-text pull-right">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<!-- Bootstrap core JavaScript -->
+	<!-- placed at end so pages load faster -->
+    <script>
+        function dataExit() {
+            try {
+                window.location.assign("showModel.html");
+            } catch(err) {
+                console.log("Major error here!" + "\n");
+            }
+        }
+
+        var $toModel = $('#toModel');
+
+        $(function() {
+            $toModel.click(function() {
+                dataExit();
+            });
+        });
+    </script>
+</body>
+</html>

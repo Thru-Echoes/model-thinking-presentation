@@ -48,9 +48,34 @@ Instead of updating the model clock by steps, we integrate over a slope from <co
 
 Deciding which time approach a simulation takes is so underrated and so very, very important!
 
-[DISCRETE_STOCH_SIRV_EXAMPLE]()
+[Discrete time disease model - web app](https://nature.berkeley.edu/~omuellerklein/sirv-discrete/discrete-model.html)
 
-[CONTINUOUS_STOCH_SIRV_EXAMPLE]()
+[Continuous time disease model - web app](https://nature.berkeley.edu/~omuellerklein/sirv-continuous/continuous-model.html)
+
+#### 2.4 Our Disease Model in Nova
+
+Here our disease model using discrete time - 50 runs:
+
+<figure class = "image"><img src = "nva-img/sirv_discrete_50runs.png"></img></figure>
+
+<br>
+<hr>
+
+And here is the same model using continuous time with <code>dt = 1</code> - 50 runs:
+
+<figure class = "image"><img src = "nva-img/sirv_continuous_1dt_50runs.png"></img></figure>
+
+<br>
+<hr>
+
+And finally - same continuous model but with <code>dt = 0.1</code> - 50 runs:
+
+<figure class = "image"><img src = "nva-img/sirv_continuous_0.1dt_50runs.png"></img></figure>
+
+<br>
+<hr>
+
+We could also see web-application versions of the *discrete* and *continuous with dt = 0.1* models (see below for links).
 
 ## 3 Parametric or Non-parametric
 

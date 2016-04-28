@@ -1,0 +1,148 @@
+/**
+ * @fileOverview Stochastic SIRV Model (JSON) in Nova for TeenTech SF 2016.
+ * @author <a href="mailto:omuellerklein@berkeley.edu">Oliver Muellerklein</a>
+ * @version 1.0
+ */
+
+/* Tester values */
+/*var PLOT_JSON = [];
+var NUM_STREAMS = 0;
+PLOT_JSON.push("Infecteds");
+NUM_STREAMS = 1;
+if (INCLUDE_SUS) {
+    PLOT_JSON.push("Susceptibles");
+    NUM_STREAMS++;
+}
+
+if (INCLUDE_INF) {
+    PLOT_JSON.push("Infecteds");
+    NUM_STREAMS++;
+}*/
+
+var isType = function(obj) {
+    return ({}).toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
+};
+
+Novaol.recordJSON({
+    title: "SIRV",
+    address: "omuellerklein@berkeley.edu",
+    date: "April 28, 2016",
+    clock: {
+        lo: 0,
+        hi: 50,
+        max: 50,
+        dt: 0.1,
+        method: "RK4",
+        step: 1
+    },
+    modcontrols: [
+        [{
+            type: "slider",
+            id: "ProbIsolation",
+            text: "Probability of Isolation",
+            size: 6,
+            min: 0.000000,
+            max: 1.000000,
+            value: 0.050000,
+            step: 0.010000
+        }, {
+            type: "slider",
+            id: "rSlider",
+            text: "Rate of Recovery",
+            size: 6,
+            min: 0.000000,
+            max: 1.000000,
+            value: 0.100000,
+            step: 0.010000
+        }, {
+            type: "slider",
+            id: "bSlider",
+            text: "Transmission Intensity Parameter",
+            size: 6,
+            min: 0.000000,
+            max: 1.000000,
+            value: 0.200000,
+            step: 0.010000
+        }, {
+            type: "slider",
+            id: "NumberVacc",
+            text: "Number of Vaccinations",
+            size: 6,
+            min: 0.000000,
+            max: 10.000000,
+            value: 0.000000,
+            step: 1.0000
+        }]
+    ],
+    visuals: function(hook, project, index) {
+        var table = hook.append("table").attr("class", "dataTable");
+        var row = table.append('tr');
+        row.append('td')
+            .style('vertical-align', 'top')
+            .style('padding', '15px')
+            .append("div")
+            .attr("id", "sirvPlot_" + project + "_" + index)
+            .attr('class', 'linechart')
+        row.append('td')
+            .style('vertical-align', 'top')
+            .style('display', 'table')
+            .style('padding', '15px')
+            .append("div")
+            .attr("id", "sirvTable_" + project + "_" + index)
+            .attr('class', 'table')
+    },
+    params: function(project, index) {
+        return {
+            sirvPlot: {
+                vizid: "sirvPlot_" + project + "_" + index,
+                width: 500,
+                height: 350,
+                margin: {
+                    top: 40,
+                    right: 20,
+                    bottom: 40,
+                    left: 60
+                },
+                autogen: false,
+                valueFunc: function(data) {
+                    return data.val;
+                },
+                textFunc: function(data) {
+                    return data.time;
+                },
+                lo: novaol.get("clock.lo"),
+                hi: globl[project].controls[index].simhi,
+                caption: "Plot of Infecteds",
+                //streams: NUM_STREAMS,
+                streams: 1,
+                strokes: ["#0000ff"],
+                init: function() {
+                    /*var plotJson = [];
+                    for (var i = 0; i < NUM_STREAMS; i++) {
+                        plotJson.push(this[PLOT_JSON[i]])
+                    }
+                    return plotJson;*/
+
+                    return [this.Infecteds];
+                },
+            },
+            sirvTable: {
+                vizid: "sirvTable_" + project + "_" + index,
+                width: 500,
+                height: 350,
+                autogen: true,
+                caption: "Table of Susceptibles and Infecteds",
+                columns: ["Time", "Susceptibles", "Infecteds"],
+                valueFuncs: [function(data) {
+                    return data.Susceptibles;
+                }, function(data) {
+                    return data.Infecteds;
+                }],
+                keys: ["Susceptibles", "Infecteds"],
+                init: function() {
+                    return [this.Susceptibles, this.Infecteds]
+                },
+            },
+        }
+    }
+});

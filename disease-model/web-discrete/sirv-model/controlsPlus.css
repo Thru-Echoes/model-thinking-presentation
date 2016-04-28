@@ -1,0 +1,60 @@
+.simControlTable {
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.simControlTable td {
+	width: 250px;
+	padding-left: 10px;
+	padding-right: 20px;
+    padding-bottom: 30px;
+    white-space: normal;
+    text-align: left;
+}
+
+.modControlTable {
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.modControlTable td {
+	width: 250px;
+	padding-left: 10px;
+	padding-right: 20px;
+    padding-bottom: 10px;
+    white-space: normal;
+    text-align: left;
+}
+
+g.g_main_linechart text {
+    font: 14px sans-serif;
+    padding-bottom: 10px;
+}
+
+caption {
+    font: 14px sans-serif;
+    color: #000;
+    padding-bottom: 10px;
+}
+
+label {
+    padding-right: 50px;
+}
+
+label[for=timeval_rhinoPVA_1] {
+    padding-right: 10px;
+}
+
+label[for=selectFems_slider_rhinoPVA_1] {
+    padding-right: 100px;
+}
+
+label[for=selectMales_slider_rhinoPVA_1] {
+    padding-right: 100px;
+}
+
+label[for=selectYoung_slider_rhinoPVA_1] {
+    padding-right: 100px;
+}

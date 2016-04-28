@@ -1,0 +1,52 @@
+.linechart {
+  font: 10px sans-serif;
+//  background-color: #ffc;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1.0px;  
+  shape-rendering: crispEdges;
+}
+
+.line_over {
+  stroke: #ccc;
+  stroke-width: 1.5;
+}
+
+text.ttip {
+  font-weight: bold;
+  font: 12px;
+  font-family: "monospace";
+}
+
+
+.x.axis path {
+//  display: none;
+}
+
+.g_main_linechart {
+  pointer-events: all;
+  cursor:pointer;
+}
+
+.line {
+  fill: none;
+//  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.tooltip {
+  position: absolute;
+  width: 200px;
+  height: 28px;
+  pointer-events: none;
+}
+
+.schart,
+.bchart {
+	background-color:white;
+	font: 9px sans-serif;
+}

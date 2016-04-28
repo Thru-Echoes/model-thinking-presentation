@@ -1,0 +1,64 @@
+<!-- Oliver Muellerklein -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+   <!-- Nova Styles -->
+	<link rel="icon" type="image/png" href="common/images/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="common/css/nova.css" />
+	<link rel="stylesheet" type="text/css" href="common/css/table.css" />
+	<link rel="stylesheet" type="text/css" href="common/css/linechart.css" />
+	<link rel="stylesheet" type="text/css" href="controlsPlus.css" />
+
+	<!-- Incorporate all other CSS -->
+	<link rel="stylesheet" type="text/css" href="bottomPlus.css" />
+	<link rel="stylesheet" type="text/css" href="controlsPlus.css" />
+	<link rel="stylesheet" type="text/css" href="plotsPlus.css" />
+	<link rel="stylesheet" type="text/css" href="stochSIRV.css" />
+	<link rel="stylesheet" type="text/css" href="bottomPlus.css" />
+
+	<!-- JS Code -->
+	<script type="text/javascript" src="../js/custom.js"></script>
+	<script>
+		/*debugger;
+
+		console.log("\nIs it?? INCLUDE_SUS: ", INCLUDE_SUS);
+		console.log("\nIs it?? INCLUDE_INF: ", INCLUDE_INF);
+		console.log("\n");*/
+	</script>
+</head>
+<body>
+
+	<!-- Utilities -->
+	<!--script src="common/util/d3.min.js"></script-->
+	<script src="common/util/d3.js"></script>
+	<script src="common/util/underscore.js"></script>
+
+	<!-- NovaOL -->
+	<!--script src="common/NovaOL/jnovascriptx.js"></script-->
+	<script src="jnovascriptxEDIT.js"></script>
+	<!--script src="common/NovaOL/jpluginsx.js"></script-->
+	<script src="jpluginsxEDIT.js"></script>
+	<script src="common/NovaOL/novaol.js"></script>
+
+	<!-- NovaOL Plugins -->
+	<script src="common/plugins/table.js"></script>
+	<script src="common/plugins/linechart.js"></script>
+
+	<!-- Simulation Definition -->
+	<script src="stochSIRV.json" data-project="stochSIRV"></script>
+	<script src="stochSIRV.js" data-project="stochSIRV"></script>
+
+	<div id="wrapper">
+		<!-- Model Content -->
+		<div id="stochSIRV_1"></div>
+
+		<script>
+		document.addEventListener("DOMContentLoaded", function(event) {
+			Novaol.startup("stochSIRV", "1");
+			novaol.signoff();
+		});
+		</script>
+	</div>
+</body>
+</html>

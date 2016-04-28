@@ -1,0 +1,223 @@
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+/*************************************************
+********************* INDEX **********************
+*************************************************/
+
+.overview-text {
+    background-color: rgba(238, 238, 238, 0.4);
+}
+
+.interact-text {
+    background-color: rgba(238, 238, 238, 0.4);
+}
+
+/*************************************************
+******************** TUTORIAL ********************
+*************************************************/
+
+.tut-text {
+    background-color: rgba(238, 238, 238, 0.4);
+}
+
+/*************************************************
+****************** SHOW MODEL ********************
+*************************************************/
+
+.col-md-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.model-text {
+    background-color: rgba(238, 238, 238, 0.4);
+}
+
+/*************************************************
+***************** MODEL WRAPPER ******************
+*************************************************/
+
+.modelContainer {
+    width: 100%;
+}
+
+.modelWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 125px;
+    /*padding-bottom: 70%;
+    padding-top: 300px;*/
+    height: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.modelWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+}
+
+/*************************************************
+********************* BODY ***********************
+*************************************************/
+
+body {
+    /*background: url('../img/mnt.jpg') no-repeat center center fixed;*/
+    background: url('../img/fog-fade.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.tmpVars {
+    padding-bottom: 25px;
+}
+
+/*.jumbotron {
+    background-image: url("../move2.jpg");
+    background-size: cover;
+    height: 100%;
+}
+*/
+
+.jumbotron {
+    background-color: rgba(255, 0, 0, 0.0);
+    padding: 0px;
+    maring-bottom: 0px;
+    text-align: center;
+}
+
+/*body {
+	background-image: url('../mnt.jpg');
+  background-repeat: no-repeat;
+	position: bottom;
+}*/
+
+/*************************************************
+******************* NAVIGATION *******************
+*************************************************/
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color: ;
+	background-color: transparent;
+}
+
+/*************************************************
+******************** BUTTONS *********************
+*************************************************/
+
+/*************************************************
+****************** CONTACT FORM ******************
+*************************************************/
+
+.form-group {
+	padding-right: 100px;
+}
+
+
+/* Connectance */
+.cnnect > .col-md-2 {
+    width: 50%;
+}
+
+.cnnect > .col-md-2 > .form-group {
+    padding-right: 2px;
+}
+
+/*.cnnect > .col-md-2 > .form-group > .form-control {
+    width: 20%;
+}*/
+
+/*************************************************
+******************** JUMBOTRON *******************
+*************************************************/
+
+body {
+	padding-top: 50px;
+}
+
+p {
+	font-family: 'Exo', sans-serif;
+}
+
+/*************************************************
+******************** CAROUSEL ********************
+*************************************************/
+
+.carousel-black {
+	text-shadow: 1px 0 0 #000, 0 1px 0 #000;
+}
+
+/* thumbnails */
+
+.allThumbs {
+	padding-top: 30px;
+}
+
+.home-thumb img:hover {
+	transform: scale(1.2);
+}
+
+.thumbnail img {
+	transition: all 0.3s ease 0s;
+	width: 100%;
+}
+
+.thumbnail {
+	overflow: hidden;
+}
+
+.bg-grey {
+	background-color: #f9f9f9;
+}
+
+/*************************************************
+********************* FOOTER *********************
+*************************************************/
+
+#push {
+    height: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.container .footer-text {
+    margin: 20px 0;
+}
+
+.footer-text {
+    color: #9d9d9d;
+}
+
+/*.footer {
+	padding-top: 30px;
+}
+
+.navbar-text > a {
+	color: inherit;
+	text-decoration: none;
+}
+*/

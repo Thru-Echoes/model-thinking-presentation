@@ -1,0 +1,46 @@
+.simControlTable {
+    width: 1200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.simControlTable td {
+	width: 200px;
+	padding-left: 30px;
+	padding-right: 30px;
+    white-space: normal;
+    text-align: left;
+}
+
+.modControlTable {
+    width: 1200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.modControlTable td {
+	width: 200px;
+	padding-left: 30px;
+	padding-right: 30px;
+    white-space: normal;
+    text-align: left;
+}
+
+g.g_main_linechart text {
+    font: 14px sans-serif;
+    padding-bottom: 10px;
+}
+
+caption {
+    font: 14px sans-serif;
+    color: #000;
+    padding-bottom: 10px;
+}
+
+label {
+    padding-right: 100px;
+}
+
+label[for=timeval_stochSIRV_1] {
+    padding-right: 10px;
+}

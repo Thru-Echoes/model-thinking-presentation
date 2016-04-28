@@ -1,0 +1,48 @@
+<!-- Nova OnLine, c. 2015 Jagnoor Grewal -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+   <!-- Nova Styles -->
+	<link rel="icon" type="image/png" href="common/images/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="common/css/nova.css" />
+	<link rel="stylesheet" type="text/css" href="common/css/table.css" />
+	<link rel="stylesheet" type="text/css" href="common/css/linechart.css" />
+	<link rel="stylesheet" type="text/css" href="controlsPlus.css" />
+	<link rel="stylesheet" type="text/css" href="insect.css" />
+
+</head>
+<body>
+
+   <!-- Utilities -->
+	<script src="common/util/d3.min.js"></script>
+	<!--script src="common/util/d3.js"></script-->
+	<script src="common/util/underscore.js"></script>
+
+   <!-- NovaOL -->
+	<script src="common/NovaOL/jnovascriptx.js"></script>
+	<script src="common/NovaOL/jpluginsx.js"></script>
+	<!--script src="common/NovaOL/jpluginsx-edit.js"></script-->
+	<script src="common/NovaOL/novaol.js"></script>
+
+   <!-- NovaOL Plugins -->
+	<script src="common/plugins/table.js"></script>
+	<!--script src="common/plugins/linechart.js"></script-->
+	<script src="common/plugins/linechart-edit.js"></script>
+
+   <!-- Simulation Definition -->
+	<script src="insect.json" data-project="insect"></script>
+	<script src="insect.js" data-project="insect"></script>
+
+   <!-- Model Content -->
+	<div id="insect_1"></div>
+
+	<script>
+	document.addEventListener("DOMContentLoaded", function(event) {
+		Novaol.startup("insect", "1");
+		novaol.signoff();
+	});
+	</script>
+
+</body>

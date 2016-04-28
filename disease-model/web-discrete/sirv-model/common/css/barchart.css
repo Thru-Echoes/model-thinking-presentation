@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.barchart
+.x.axis path {
+  display: none;
+}
+
+.schart,
+.bchart {
+	background-color:white;
+}

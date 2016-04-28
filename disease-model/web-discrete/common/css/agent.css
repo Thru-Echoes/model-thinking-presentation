@@ -1,0 +1,15 @@
+.PL_Agentviewerx .PL_Raster {
+    font: 10px sans-serif;
+    width: 550px;
+    height: 550px;
+}
+.g_main_agent {
+	cursor: pointer;
+} 
+.g_main_cell {
+    pointer-events: all;
+    cursor: pointer;
+}
+.click-capture {
+    fill: #fef;
+}

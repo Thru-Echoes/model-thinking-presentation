@@ -1,0 +1,15 @@
+div.scroll {
+    padding-bottom: 10px;
+}
+/*
+div#rhinoPVA_1 {
+    height: 2600px;
+}*/
+
+.footer {
+    position: fixed;
+    left:30px;
+    bottom:10px;
+    height:30px;
+    width:100%;
+}

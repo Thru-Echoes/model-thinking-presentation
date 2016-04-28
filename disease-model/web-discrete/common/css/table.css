@@ -1,0 +1,32 @@
+.table {
+	width: 500px;
+	height: 350px;
+}
+
+.bodyTable td {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 15px
+}
+
+.bodyTable tr {
+	height: 25px;
+}
+
+.bodyTable tr:hover {
+	background-color: grey;
+}
+
+.headerTable th:hover {
+	background-color: grey;
+}
+
+.headerTable th {
+	width: 150px;	
+	text-align: center
+}
+
+.scroll {
+	overflow: auto;
+}
